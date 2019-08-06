@@ -1,0 +1,335 @@
+$min_width_website: 1024px;
+$min_width_ipad: 1000px;
+$min_width_mb: 768px;
+$min_width_menu: 900px; //for hamburger menu
+
+
+$menu_min_height: 90px; //98px
+$menu_min_height_mb: 63px; 
+
+$wrapper_mb: 490px;
+
+/*------------------------------ colors ------------------------------*/ 
+$color_flow: #2898cb; 
+$color_flow_hover: #278abb;
+$color_flow_bg: #eff8fd;
+$color_gray46: #464646;
+$color_gray55: #555;
+$color_gray64: #646e7a;
+$color_gray97: #979797;
+$color_white: #FFF;
+$color_green: #88c426;
+$color_green_hover: #66BD00; //66BD00 //21A624
+$color_black: #000;
+$color_bg_row: #f2f4f6;
+$color_flow60: #60bde7;
+$color_price: #646e7a;
+$color_gray7f:#7f96a7;
+$color_blue56: #569ef1;
+
+/* rgba */ 
+$color_flow_09: rgba(40, 152, 203, 0.9);
+$color_white_08: rgba(255, 255, 255, 0.8); 
+$color_white_09: rgba(255, 255, 255, 0.9); 
+$color_gray64_02: rgba(100, 110, 122, 0.2);
+
+.color_flow{
+    color: $color_flow;
+}
+.color_gray55{
+    color: $color_gray55;
+}
+.color_gray64{
+    color: $color_gray64;
+}
+.color_white{
+    color: $color_white;
+}
+ 
+// ----------------------- unset-margin --------------------------
+.unset-margin {
+    margin-bottom: unset;
+}
+// ----------------------- unset-margin --------------------------
+
+
+/*------------------------------ fonts ------------------------------*/
+$titlefont: 'Prompt', sans-serif;
+$titlefont_bold: 'Prompt-600', sans-serif;
+$titlefont_light: 'Prompt-200', sans-serif;
+$bodyfont: 'cs_chatthaiuiregular', sans-serif; 
+$iconfont: 'FontAwesome'; 
+$contactfont: 'Montserrat', sans-serif;  
+ 
+@mixin fontstyle($family,$size,$weight,$line,$color) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    color: $color;
+}
+
+/*****************************************/
+@mixin heading3() {
+    @include fontstyle($titlefont_bold,80px,normal,1.1em,$color_flow);  //bold - 600 
+}
+@mixin heading1() { //* 
+    @include fontstyle($titlefont_bold,42px,normal,1.38em,$color_flow); //bold - 600 
+    @media (max-width: $min_width_mb){ 
+        font-size: 26px; 
+        line-height: 1.27;
+    } 
+    // @media (max-width: 420px){ 
+    //     font-size: 7vw;     
+    // } 
+}
+@mixin heading1_en() { //* 
+    @include fontstyle($titlefont_bold,36px,normal,1.38em,$color_flow); //bold - 600 
+    @media (max-width: $min_width_mb){ 
+        font-size: 26px; 
+        line-height: 1.27;
+    }
+    // @media (max-width: 420px){ 
+    //     font-size: 7vw;     
+    // } 
+}
+@mixin heading1_en2() { //* 
+    @include fontstyle($titlefont_bold,38px,normal,1.38em,$color_flow); //bold - 600 
+    @media (max-width: $min_width_mb){ 
+        font-size: 26px; 
+        line-height: 1.27;
+    }
+    // @media (max-width: 420px){ 
+    //     font-size: 7vw;     
+    // } 
+}
+
+@mixin heading2() { //*
+    @include fontstyle($titlefont_bold,42px,normal,1.29em,$color_flow);   
+    @media (max-width: $min_width_mb){ 
+        font-size: 20px;  
+        line-height: 1.5em;
+    }
+    @media (max-width: 420px){ 
+        font-size: 5.3vw;      
+    } 
+}
+
+@mixin heading2_en() { //*
+    @include fontstyle($titlefont_bold,32px,normal,1.29em,$color_flow);   
+    @media (max-width: $min_width_mb){ 
+        font-size: 20px;  
+        line-height: 1.5em;
+    }
+    @media (max-width: 420px){ 
+        font-size: 5.3vw;      
+    } 
+}
+
+
+
+@mixin headingQ() { //*
+    @include fontstyle($titlefont_bold,42px,normal,1.29em,$color_gray55);   
+    @media (max-width: $min_width_mb){ 
+        font-size: 20px;  
+        line-height: 1.5em;
+    }
+    @media (max-width: 420px){ 
+        font-size: 5.3vw;      
+    } 
+}
+@mixin headingContact() { //*
+    @include fontstyle($titlefont_bold,42px,normal,1.29em,$color_white);   
+    @media (max-width: $min_width_mb){ 
+        font-size: 20px;  
+        line-height: 1.5em;
+    }
+    @media (max-width: 420px){ 
+        font-size: 5.3vw;      
+    } 
+}
+@mixin detailContact() { //*
+    @include fontstyle($titlefont,26px,normal,1.5em,$color_white);   
+    @media (max-width: $min_width_mb){ 
+        font-size: 18px;  
+        line-height: 1.5em;
+    }
+    @media (max-width: 420px){ 
+        font-size: 4.5vw;      
+    } 
+}
+@mixin title1() { //*
+    @include fontstyle($titlefont_bold,36px,normal,0.94em,$color_gray55);  //bold - 600 
+    @media (max-width: $min_width_mb){ 
+        font-size: 26px; 
+        line-height: normal;
+        color: $color_gray46;
+    }
+    // @media (max-width: 420px){ 
+    //     font-size: 7vw;     
+    // } 
+}
+@mixin titleClick() { //*
+    @include fontstyle($titlefont_bold,2vw,normal,0.94em,$color_gray55);  //bold - 600 
+    @media (max-width: $min_width_mb){ 
+        font-size: 19px; 
+        line-height: normal;
+        color: $color_gray46;
+    }
+    // @media (max-width: 420px){ 
+    //     font-size: 7vw;     
+    // } 
+}
+@mixin title2() { //*
+    @include fontstyle($titlefont_bold,28px,normal,1.39em,$color_gray55); 
+    @media (max-width: $min_width_mb){ 
+        font-size: 18px;   
+        //line-height: 2.17em;
+    }
+    // @media (max-width: 420px){ 
+    //     font-size: 4.8vw;   
+    // } 
+}  
+
+@mixin title2_en() { //*
+    @include fontstyle($titlefont_bold,26px,normal,1.39em,$color_gray55); 
+    @media (max-width: $min_width_mb){ 
+        font-size: 18px;   
+        //line-height: 2.17em;
+    }
+    // @media (max-width: 420px){ 
+    //     font-size: 4.8vw;   
+    // } 
+}  
+
+@mixin  titleQ() {
+    @media (max-width: $min_width_mb){ 
+        font-size: 18px;   
+        //line-height: 2.17em;
+    }
+}
+@mixin  detailQ() {
+    @media (max-width: $min_width_mb){ 
+        font-size: 18px;   
+        //line-height: 2.17em;
+    }
+}
+@mixin title3() {
+    @include fontstyle($titlefont,28px,normal,normal,$color_flow);  
+}  
+@mixin mtitle3() {
+    @include fontstyle($titlefont,22px,normal,0.82em,$color_flow);  
+}  
+@mixin mlink2() {
+    @include fontstyle($titlefont,18px,500,normal,$color_green);  
+} 
+@mixin mlink4() {
+    @include fontstyle($titlefont,18px,500,normal,$color_flow);  
+} 
+@mixin link1() { //*
+    @include fontstyle($bodyfont,18px,normal,normal,$color_gray55);  
+    @media (max-width: $min_width_mb){ 
+        font-weight: 500;
+        line-height: normal;
+    } 
+}  
+@mixin link1_en() { //*
+    @include fontstyle($bodyfont,16px,normal,normal,$color_gray55);  
+    @media (max-width: $min_width_mb){ 
+        font-weight: 500;
+        line-height: normal;
+    } 
+}  
+@mixin body1(){ //**
+    @include fontstyle($bodyfont,18px,normal,1.67em,$color_gray64);  
+}   
+@mixin body1_en(){ //**
+    @include fontstyle($bodyfont,17px,normal,1.67em,$color_gray64);  
+}
+@mixin body2(){ //**
+    @include fontstyle($bodyfont,16px,normal,1.42,$color_gray64);  
+}
+
+@mixin link2() { //**
+    @include fontstyle($bodyfont,18px,normal,1.28em,$color_white_09);  
+}  
+@mixin linkContact() { //**
+    border-bottom: 3px solid #2898cb;
+    padding-bottom: 25px;
+    @include fontstyle($bodyfont,20px,normal,1.28em,$color_gray55);  
+    @media (max-width: $min_width_mb){  
+        font-size: 15px;   
+        line-height: 1.92;
+    } 
+}  
+@mixin caption1() { //**
+    @include fontstyle($titlefont,18px,normal,1.28em,$color_flow);  
+}  
+@mixin mlink5() {
+    @include fontstyle($titlefont,18px,normal,normal,$color_gray64);  
+}  
+@mixin link3() { //* 
+    @include fontstyle($bodyfont,15px,normal,1.53em,$color_flow_09);
+    @media (max-width: $min_width_mb){  
+        font-size: 12px;   
+        line-height: 1.92;
+    } 
+}   
+@mixin mcaption1() {  
+    @include fontstyle($bodyfont,12px,normal,2.33em,$color_gray55);  
+}  
+@mixin linkcontact() { //**
+    @include fontstyle($titlefont-bold,18px,normal,1.28em,$color_flow);  
+}
+@mixin linkcontact2() { //**
+    @include fontstyle($titlefont-bold,25px,normal,1.28em,$color_flow);  
+}
+
+@mixin montserrat(){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin montserratBold(){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+}
+
+@mixin montserrat700(){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+/*----------------------- mixin function ---------------------*/
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin rotate($degree){
+    -webkit-transform: rotate($degree);
+    -moz-transform: rotate($degree);
+    -o-transform: rotate($degree);
+    transform: rotate($degree);
+}
+@mixin boxshadowFunction($value) {
+    -webkit-box-shadow:  $value;
+    -moz-box-shadow:  $value;
+    box-shadow:   $value;
+}
+@mixin boxshadow() {
+    // @include boxshadowFunction(4px 4px 21px 0 rgba(0, 0, 0, 0.11) !important); 
+    @include boxshadowFunction(0px 0px 0px 0 rgba(0, 0, 0, 0) !important);
+}
+@mixin boxshadowNone() {
+    @include boxshadowFunction(none !important);  
+}
+@mixin transitionFunction($value){
+    -webkit-transition: $value;                  
+    -moz-transition: $value;                 
+    -o-transition: $value;   
+    -ms-transition: $value;          
+    transition: $value;
+}

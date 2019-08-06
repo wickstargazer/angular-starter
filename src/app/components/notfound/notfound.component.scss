@@ -1,0 +1,73 @@
+.notfound.container{
+    text-align: center;
+    font-family:'cs_chatthaiuiregular', sans-serif;
+    line-height: 1.75;
+    padding: 40px 0;
+    .notfound-head{
+        font-family:'Prompt-600', sans-serif;
+        line-height: 1.5;
+        font-size:40px;
+        color: #2898cb;
+        @media(max-width:420px) {
+            font-size:30px;
+        }
+    }
+    .notfounf-detail{
+        font-size: 16px;
+        padding-top: 10px;
+        max-width: 395px;
+        width: 100%;
+        margin: 0 auto;
+        @media(max-width:420px) {
+            max-width: 330px;
+        }
+        @media(max-width:320px) {
+            max-width: 300px;
+        }
+    }
+    .notfound-img{
+        padding-top: 40px;
+        img{
+            max-width: 397px;
+            width: 95%;
+            @media(max-width:420px) {
+                max-width: 333px;
+            }
+        } 
+    }
+    
+    .gotohomepage-margin{
+        margin-top: 40px;
+            .gotohomepage:link,
+            .gotohomepage:visited{
+                background-color: #2898cb;
+                color: white;
+                padding: 10px 100px;
+                border-radius: 4px;
+                @media(max-width:420px) {
+                    padding: 10px 20%;
+                }
+            }
+            .gotohomepage:hover,
+            .gotohomepage:active{
+                background-color: #3fa4d1;
+            }
+    }
+    
+    .notfound-tell{
+        padding-top: 12px;
+    }
+}
+
+.desktop{
+    display: block;
+    @media(max-width:420px) {
+        display: none;
+    }
+}
+.mobile{
+    display: none;
+    @media(max-width:420px) {
+        display: block;
+    }
+}

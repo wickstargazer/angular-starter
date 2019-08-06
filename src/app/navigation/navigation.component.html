@@ -1,0 +1,36 @@
+﻿<section class="menu-section _v_for_more clearfix" (window:resize)="onResizeMenu($event)"> 
+    <div style="text-align: center">  
+      
+    </div>
+  <div class="wrapper">
+    <div class="menu-support clearfix" style="display: flex;justify-content: flex-end;">
+      <div class="language-icon" >
+        <a href="javascript:void(0);" (click)="switchLanguage('th')" *ngIf="translate.currentLang == 'en'">Thai</a>
+        <a href="javascript:void(0);" (click)="switchLanguage('en')" *ngIf="translate.currentLang == 'th'">English</a>
+      </div>
+    </div>
+    <section class="menu-logo">
+      <a href="#" [routerLink]="[translate.currentLang]" routerLinkActive="current">
+        Logo
+      </a>
+    </section>
+    <section class="menu-navigate clearfix">
+      <div class="hamburger-div">
+        <div [ngClass]="hamburgerStatus ? 'hamburger-icon open' : 'hamburger-icon'" (click)="openMobileMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul class="ul-navigate clearfix" [@showMenu]=currentMenuState>
+        <!-- About Us -->
+        <li class="menu-link">
+          <a class="a-menu" [routerLink]="[translate.currentLang, 'aboutus']" routerLinkActive="current">
+            <span class="hr">{{'Navigation.AboutUs' | translate}}</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</section>
