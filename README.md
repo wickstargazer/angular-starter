@@ -26,18 +26,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
----
-## Title: "Angular Starter Kit with Single Signon (Authorization Code Flow)"
-## Date: 2019-06-21
-## Lastmod: 2019-06-21
-## Author: Wickstargazer
-## image: /post/images/angular_starter.jpg
-## Categories: ["Angular", "OpenID", "TypeScript", "SSO"]
-## Tags: ["Web Development", "OpenID", "Angular", "TypeScript", "SSO"]
-## Draft: false
-## MinuteRead: 4 MIN READ
-## PhotoBy: Markus Spiske temporausch.com from Pexels
----
+------------
+# Title: "Angular Starter Kit with Single Signon (Authorization Code Flow)"
+# Date: 2019-06-21
+# Lastmod: 2019-06-21
+# Author: Wickstargazer
+# image: /post/images/angular_starter.jpg
+# Categories: ["Angular", "OpenID", "TypeScript", "SSO"]
+# Tags: ["Web Development", "OpenID", "Angular", "TypeScript", "SSO"]
+# Draft: false
+# MinuteRead: 4 MIN READ
+# PhotoBy: Markus Spiske temporausch.com from Pexels
+------------
 
 > Disclaimer: I assume the reader understands how to write html/scss and start a basic angular-app or any webpack based site like Vue or Reactjs before reading this blog. If not please visit [getting started with angular before going on!](https://angular.io/start "getting started with angular before going on!")Disclaimer: I assume the reader understands how to write html/scss and start a basic angular-app or any webpack based site like Vue or Reactjs before reading this blog. If not please visit [getting started with angular before going on!](https://angular.io/start "getting started with angular before going on!")
 
